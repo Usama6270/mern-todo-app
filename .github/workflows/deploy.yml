@@ -26,7 +26,7 @@ jobs:
           docker build -t usama1234567/todo-frontend:latest .
 
       - name: Login to Docker Hub
-        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+        run: echo "usama1234" | docker login -u "usama1234567" --password-stdin
 
       - name: Push Backend Docker image
         run: docker push usama1234567/todo-backend:latest
